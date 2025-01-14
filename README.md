@@ -72,7 +72,7 @@ ex)「cid」が「00_00」のものを，4人がどう答えているか．(HH,H
 
 ## プログラムの簡単な手順
 ### 1.データを読み込む
-評価者それぞれの活性度データを読み込む(評価者それぞれの{数字}_first_data.csv,{数字}_second_data.csv)．
+評価者それぞれの活性度データを読み込む(評価者それぞれの「{数字}_first_data.csv,{数字}_second_data.csv」)．
 
 評価者のリスト(personal_activity_label_list)．その中身は[column=cid,class]のデータフレーム
 
