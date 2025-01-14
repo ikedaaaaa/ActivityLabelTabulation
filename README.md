@@ -3,7 +3,7 @@
 
 ## 1. コンテナを作成する．
 ``` bash
-# ymlやdockerfileを編集し，buildしないとダメな場合
+# yml,dockerfile,requirements.txtを編集した場合はbuildをする必要がある
 docker compose -f compose.yml up --build -d
 
 # buildをしなくてもいい場合
@@ -24,6 +24,16 @@ docker exec -it ActivityLabelTabulation bash
 ## 4. コンテナを壊す
 ``` bash
 docker compose -f compose.yml down  
+```
+
+# 開発中の注意点
+## 新しいパッケージを入れたい場合
+```bash
+# コンテナ内で実行
+pip install {package}
+
+# 次にコンテナを立てるときにそのパッケージを入れることができるために実行
+pip freeze > requirements.txt
 ```
 
 # プログラムの仕様
