@@ -29,28 +29,22 @@ docker compose -f compose.yml down
 # プログラムの仕様
 ## ディレクトリ構造
 ```
-└── 実験_活性度調査_01_池田
-    └── 00
-        └── 00_conv_file
-```
-
-```
 02実験後データ/
     ┝ 実験_活性度調査_01_池田/
-        └ 00/
-            └ 00_conv_file/
-                └ 00_00.wav
-                └ 00_01.wav
-                ...
-            └ 00_first_data.csv
-            └ 00_second_data.csv
-            └ assertive_point_00_first_data.csv
-            └ assertive_point_00_second_data.csv
-        └ 01/
-        ...
-        └ 014/
-        └ 会話活性度の定義.pdf
-        ...
+    │    └ 00/
+    │    │     └ 00_conv_file/
+    │    │     │   └ 00_00.wav
+    │    │     │   └ 00_01.wav
+    │    │     │   ...
+    │    │     └ 00_first_data.csv
+    │    │     └ 00_second_data.csv
+    │    │     └ assertive_point_00_first_data.csv
+    │    │     └ assertive_point_00_second_data.csv
+    │    └ 01/
+    │    ...
+    │    └ 014/
+    │    └ 会話活性度の定義.pdf
+    │    ...
     ┝ 実験_活性度調査_03_上野/
     ┝ 実験_活性度調査_07_中井し/
     ┝ 実験_活性度調査_09_野村/
