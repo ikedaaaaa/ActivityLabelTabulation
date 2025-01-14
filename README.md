@@ -26,16 +26,15 @@ docker exec -it ActivityLabelTabulation bash
 docker compose -f compose.yml down  
 ```
 
-┣ ┠ ┝ ├
-┫ ┨ ┥ ┤ 
-│ ┃
-─ ━
-┌ ┏ ┓ ┐
-└ ┗ ┛ ┘
-
 # プログラムの仕様
 ## ディレクトリ構造
-実験後データ/
+└── 実験_活性度調査_01_池田
+    └── 00
+        └── 00_conv_file
+
+
+
+02実験後データ/
     ┝ 実験_活性度調査_01_池田/
         └ 00/
             └ 00_conv_file/
