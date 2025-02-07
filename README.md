@@ -17,8 +17,7 @@ docker exec -it ActivityLabelTabulation bash
 
 ## 3. コンテナ内でpythonファイルを実行する
 ``` bash
-# python main.py {集計するディレクトリ}
-例：python main.py 実験後データ
+python main.py
 ```
 
 ## 4. コンテナを壊す
