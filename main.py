@@ -168,8 +168,8 @@ def main():
     # print(correct_activity_label_df)
     
     #出力
-    correct_activity_label_df.to_csv("correct_activity_label.csv", index=False)
-    print("✅ 出力完了: correct_activity_label.csv")
+    correct_activity_label_df.to_csv("data/correct_activity_label.csv", index=False)
+    print("✅ 出力完了: data/correct_activity_label.csv")
     
     
 
