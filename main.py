@@ -123,6 +123,13 @@ def resolve_undecided_labels(undecided_activity_label_list, personal_activity_la
 
     return correct_activity_label_df
 
+def df_sort(df):
+    df['cid_left'] = df['cid'].str.split('_').str[0].astype(int)
+    df['cid_right'] = df['cid'].str.split('_').str[1].astype(int)
+    df_sorted = df.sort_values(by=['cid_left', 'cid_right', 'class'], ascending=[True, True, False])
+    df_sorted = df_sorted[['cid', 'class']]
+    return df_sorted
+
 def main():
     """
     メイン
@@ -167,8 +174,12 @@ def main():
     correct_activity_label_df = resolve_undecided_labels(undecided_activity_label_list, personal_activity_label_list, best_reviewer_idx, correct_activity_label_df)
     # print(correct_activity_label_df)
     
+    # データフレームをソート
+    sorted_df = df_sort(correct_activity_label_df)
+
+
     #出力
-    correct_activity_label_df.to_csv("data/correct_activity_label.csv", index=False)
+    sorted_df.to_csv("data/correct_activity_label.csv", index=False)
     print("✅ 出力完了: data/correct_activity_label.csv")
     
     
